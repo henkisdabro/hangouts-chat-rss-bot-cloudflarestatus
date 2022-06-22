@@ -1,5 +1,5 @@
-# Google Chat Space Webhook RSS bot
-A simple Google Apps Script that fetches news from Cloudflare's Status Page's RSS feed and posts them to a Google Chat space using webhooks.
+# Google Chat Space Webhook RSS bot with Cloudflare's Status Page Updates
+A simple Google Apps Script that fetches news from [Cloudflare's Status Page's](https://www.cloudflarestatus.com/) RSS feed and posts them to a Google Chat space using webhooks.
 
 ## Create a Google Chat webhook
 1. (Optional) Create a new space for testing
