@@ -1,10 +1,8 @@
-# Hangouts Chat RSS bot
-A simple Google Apps Script that fetches news from an RSS feed and posts them to a Hangouts Chat room using webhooks.
+# Google Chat Space Webhook RSS bot
+A simple Google Apps Script that fetches news from Cloudflare's Status Page's RSS feed and posts them to a Google Chat space using webhooks.
 
-This sample uses the Google Cloud Platform blog as an example.
-
-## Create a Hangouts Chat webhook
-1. (Optional) Create a new room for testing
+## Create a Google Chat webhook
+1. (Optional) Create a new space for testing
 2. Select the "Configure webhooks" menu:
 
     <img alt="Configure webhooks" src="docs/images/configure_webhooks.png" height="300"/>
@@ -13,7 +11,7 @@ This sample uses the Google Cloud Platform blog as an example.
 
     <img alt="New webhook" src="docs/images/new_webhook.png" width="500"/>
 
-4. Once created, you will see your new webhook with it's URL. This is the URL we will use to post new messages to the room:
+4. Once created, you will see your new webhook with it's URL. This is the URL we will use to post new messages to the space:
 
     <img alt="View webhooks" src="docs/images/view_webhooks.png" width="500"/>
 
@@ -21,7 +19,7 @@ This sample uses the Google Cloud Platform blog as an example.
 
 1. Create a new Google Apps Script project
 2. Copy the content of [/Code.gs](/Code.gs) to a file in your Google Apps Script project
-3. Update the WEBHOOK_URL variable with the URL of your webhook (see [Create a Hangouts Chat webhook](#create-a-hangouts-chat-webhook))
+3. Update the WEBHOOK_URL variable with the URL of your webhook (see [Create a Google Chat webhook](#create-a-hangouts-chat-webhook))
 
     <img alt="Update script" src="docs/images/update_script.png" width="800"/>
 
@@ -40,7 +38,7 @@ Click on "Review Permissions" and authorize the script by clicking on the "Allow
 
 <img alt="Authorize" src="docs/images/authorize.png" width="400"/>
 
-Once the script finished its execution, you should see new topics posted in your Hangouts Chat room:
+Once the script finished its execution, you should see new topics posted in your Google Chat space:
 
 <img alt="Post" src="docs/images/post.png" width="900"/>
 
@@ -58,9 +56,3 @@ To set a new trigger, click on the Triggers icon on your Google Apps Script proj
 Then schedule a new Time-driven trigger to automatically execute the "fetchNews" function at a regular interval (e.g. every 10 minutes):
 
 <img alt="Schedule trigger" src="docs/images/set_trigger.png" width="700"/>
-
-
-## Share your room!
-Share your room to everyone in your company and react together to new exciting news!
-
-<img alt="React" src="docs/images/react.png" width="900"/>
